@@ -8,7 +8,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use: "bar",
+	Use:   "bar",
 	Short: "generate new barcode",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("generate new barcode")
@@ -21,4 +21,3 @@ func Execute() {
 		os.Exit(1)
 	}
 }
-
